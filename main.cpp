@@ -12,8 +12,9 @@ static void show_usage(const std::string & name)
               << "Options:\n"
               << "\t-h, --help                  Show this help message\n"
               << "\t-a, --assemble file.asm     Assembles file and outputs file.rom\n"
-              << "\t-d, --disassemble file.rom  Disassembles file and outputs file.dis\n"
-              << "\t-r, --run file.rom          Executes rom file"
+              << "\t-d, --disassemble dump.hex  Disassembles file and outputs file.dis\n"
+              << "\t-r, --run file.rom          Executes rom file\n"
+              << "\t-x, --run-dump file.rom     Executes rom file and dumps memory to dump.hex"
               << std::endl;
 }
 
@@ -40,6 +41,9 @@ int main(int argc, char** argv) {
         } else if ((arg == "-r") || (arg == "--run")) {
             option = 3;
             filename = argv[++i];
+        } else if ((arg == "-x") || (arg == "--run-dump")) {
+            option = 4;
+            filename = argv[++i];
         } else {
             show_usage(argv[0]);
             return 1;
@@ -51,10 +55,12 @@ int main(int argc, char** argv) {
         std::cout << filename;
         //tools::assembler(filename);
         break;
+
     case 2: //disassemble
         tools::Disassembler disassembler;
         disassembler.disassemble(filename);
         break;
+
     case 3: //run
         std::cout <<   "+----------------------------------------------------+"  << std::endl;
         std::cout <<   "+     _   _  _____  _____   _____ ___  ___ _   _     +"  << std::endl;
@@ -66,11 +72,13 @@ int main(int argc, char** argv) {
         std::cout <<   "+____________________________________________________+"  << std::endl;
         std::cout <<   "+        Tomislav (frainfreeze) Kucar, 2018          +"  << std::endl;
         std::cout <<   "+----------------------------------------------------+"  << std::endl;
-        // start emulation
-        CPU();
 
         // run CPU until the program is killed
-        // for(;;) CPU.op();//
+        for(;;) CPU();//CPU.op();
+
+    case 4:
+        //run
+        //dump memory into dump.hex
     default:
         break;
     }

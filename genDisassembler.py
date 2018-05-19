@@ -128,7 +128,7 @@ public:
 
         unsigned pc = 0;
 		//std::cout << "buffer: " << buffer << "\n";
-        std::cout << "Hexdump      Disassembly" << "\n";
+        std::cout << "  Hexdump    Disassembly" << "\n";
 		std::cout << "------------------------" << "\n";
 		while (pc < buffer.size()) {
             pc += disassemble_(buffer, pc);
