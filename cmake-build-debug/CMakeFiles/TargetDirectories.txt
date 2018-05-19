@@ -1,0 +1,4 @@
+/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/run.dir
+/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir
