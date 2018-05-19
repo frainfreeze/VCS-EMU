@@ -94,37 +94,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/frain/grada-final/src/APU.cpp">
+		<Unit filename="/home/frain/grada-final/src/include/APU.cpp">
 			<Option target="VCSEMU"/>
 		</Unit>
-		<Unit filename="/home/frain/grada-final/src/APU.h">
+		<Unit filename="/home/frain/grada-final/src/include/APU.h">
 			<Option target="VCSEMU"/>
 		</Unit>
-		<Unit filename="/home/frain/grada-final/src/CPU.cpp">
+		<Unit filename="/home/frain/grada-final/src/include/CPU.cpp">
 			<Option target="VCSEMU"/>
 		</Unit>
-		<Unit filename="/home/frain/grada-final/src/CPU.h">
+		<Unit filename="/home/frain/grada-final/src/include/CPU.h">
 			<Option target="VCSEMU"/>
 		</Unit>
-		<Unit filename="/home/frain/grada-final/src/IO.cpp">
+		<Unit filename="/home/frain/grada-final/src/include/IO.cpp">
 			<Option target="VCSEMU"/>
 		</Unit>
-		<Unit filename="/home/frain/grada-final/src/IO.h">
+		<Unit filename="/home/frain/grada-final/src/include/IO.h">
 			<Option target="VCSEMU"/>
 		</Unit>
-		<Unit filename="/home/frain/grada-final/src/PPU.cpp">
+		<Unit filename="/home/frain/grada-final/src/include/PPU.cpp">
 			<Option target="VCSEMU"/>
 		</Unit>
-		<Unit filename="/home/frain/grada-final/src/PPU.h">
+		<Unit filename="/home/frain/grada-final/src/include/PPU.h">
 			<Option target="VCSEMU"/>
 		</Unit>
 		<Unit filename="/home/frain/grada-final/src/main.cpp">
-			<Option target="VCSEMU"/>
-		</Unit>
-		<Unit filename="/home/frain/grada-final/src/tools.cpp">
-			<Option target="VCSEMU"/>
-		</Unit>
-		<Unit filename="/home/frain/grada-final/src/tools.h">
 			<Option target="VCSEMU"/>
 		</Unit>
 		<Unit filename="/home/frain/grada-final/src/CMakeLists.txt">

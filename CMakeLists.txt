@@ -3,4 +3,13 @@ project(src)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(src main.cpp CPU.cpp CPU.h IO.cpp IO.h APU.cpp APU.h PPU.cpp PPU.h tools.cpp tools.h)
+add_executable(VCSEMU main.cpp include/CPU.cpp include/CPU.h include/IO.cpp include/IO.h include/APU.cpp include/APU.h include/PPU.cpp include/PPU.h)
+
+add_custom_target(
+        run ALL
+        COMMAND python3 ${CMAKE_CURRENT_SOURCE_DIR}/genDisassembler.py ${CMAKE_CURRENT_SOURCE_DIR}/ops.csv ${CMAKE_CURRENT_SOURCE_DIR}/include
+        BYPRODUCTS include/disassembler.h
+        COMMENT "Generating disassembler"
+)
+
+add_dependencies(VCSEMU run)

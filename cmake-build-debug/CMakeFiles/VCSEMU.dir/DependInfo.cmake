@@ -4,12 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/frain/grada-final/src/APU.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/APU.cpp.o"
-  "/home/frain/grada-final/src/CPU.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/CPU.cpp.o"
-  "/home/frain/grada-final/src/IO.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/IO.cpp.o"
-  "/home/frain/grada-final/src/PPU.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/PPU.cpp.o"
+  "/home/frain/grada-final/src/include/APU.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/include/APU.cpp.o"
+  "/home/frain/grada-final/src/include/CPU.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/include/CPU.cpp.o"
+  "/home/frain/grada-final/src/include/IO.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/include/IO.cpp.o"
+  "/home/frain/grada-final/src/include/PPU.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/include/PPU.cpp.o"
   "/home/frain/grada-final/src/main.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/main.cpp.o"
-  "/home/frain/grada-final/src/tools.cpp" "/home/frain/grada-final/src/cmake-build-debug/CMakeFiles/VCSEMU.dir/tools.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

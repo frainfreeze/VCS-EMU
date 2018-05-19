@@ -136,113 +136,113 @@ VCSEMU/fast:
 	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/build
 .PHONY : VCSEMU/fast
 
-APU.o: APU.cpp.o
+include/APU.o: include/APU.cpp.o
 
-.PHONY : APU.o
-
-# target to build an object file
-APU.cpp.o:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/APU.cpp.o
-.PHONY : APU.cpp.o
-
-APU.i: APU.cpp.i
-
-.PHONY : APU.i
-
-# target to preprocess a source file
-APU.cpp.i:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/APU.cpp.i
-.PHONY : APU.cpp.i
-
-APU.s: APU.cpp.s
-
-.PHONY : APU.s
-
-# target to generate assembly for a file
-APU.cpp.s:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/APU.cpp.s
-.PHONY : APU.cpp.s
-
-CPU.o: CPU.cpp.o
-
-.PHONY : CPU.o
+.PHONY : include/APU.o
 
 # target to build an object file
-CPU.cpp.o:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/CPU.cpp.o
-.PHONY : CPU.cpp.o
+include/APU.cpp.o:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/APU.cpp.o
+.PHONY : include/APU.cpp.o
 
-CPU.i: CPU.cpp.i
+include/APU.i: include/APU.cpp.i
 
-.PHONY : CPU.i
+.PHONY : include/APU.i
 
 # target to preprocess a source file
-CPU.cpp.i:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/CPU.cpp.i
-.PHONY : CPU.cpp.i
+include/APU.cpp.i:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/APU.cpp.i
+.PHONY : include/APU.cpp.i
 
-CPU.s: CPU.cpp.s
+include/APU.s: include/APU.cpp.s
 
-.PHONY : CPU.s
+.PHONY : include/APU.s
 
 # target to generate assembly for a file
-CPU.cpp.s:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/CPU.cpp.s
-.PHONY : CPU.cpp.s
+include/APU.cpp.s:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/APU.cpp.s
+.PHONY : include/APU.cpp.s
 
-IO.o: IO.cpp.o
+include/CPU.o: include/CPU.cpp.o
 
-.PHONY : IO.o
+.PHONY : include/CPU.o
 
 # target to build an object file
-IO.cpp.o:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/IO.cpp.o
-.PHONY : IO.cpp.o
+include/CPU.cpp.o:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/CPU.cpp.o
+.PHONY : include/CPU.cpp.o
 
-IO.i: IO.cpp.i
+include/CPU.i: include/CPU.cpp.i
 
-.PHONY : IO.i
+.PHONY : include/CPU.i
 
 # target to preprocess a source file
-IO.cpp.i:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/IO.cpp.i
-.PHONY : IO.cpp.i
+include/CPU.cpp.i:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/CPU.cpp.i
+.PHONY : include/CPU.cpp.i
 
-IO.s: IO.cpp.s
+include/CPU.s: include/CPU.cpp.s
 
-.PHONY : IO.s
+.PHONY : include/CPU.s
 
 # target to generate assembly for a file
-IO.cpp.s:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/IO.cpp.s
-.PHONY : IO.cpp.s
+include/CPU.cpp.s:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/CPU.cpp.s
+.PHONY : include/CPU.cpp.s
 
-PPU.o: PPU.cpp.o
+include/IO.o: include/IO.cpp.o
 
-.PHONY : PPU.o
+.PHONY : include/IO.o
 
 # target to build an object file
-PPU.cpp.o:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/PPU.cpp.o
-.PHONY : PPU.cpp.o
+include/IO.cpp.o:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/IO.cpp.o
+.PHONY : include/IO.cpp.o
 
-PPU.i: PPU.cpp.i
+include/IO.i: include/IO.cpp.i
 
-.PHONY : PPU.i
+.PHONY : include/IO.i
 
 # target to preprocess a source file
-PPU.cpp.i:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/PPU.cpp.i
-.PHONY : PPU.cpp.i
+include/IO.cpp.i:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/IO.cpp.i
+.PHONY : include/IO.cpp.i
 
-PPU.s: PPU.cpp.s
+include/IO.s: include/IO.cpp.s
 
-.PHONY : PPU.s
+.PHONY : include/IO.s
 
 # target to generate assembly for a file
-PPU.cpp.s:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/PPU.cpp.s
-.PHONY : PPU.cpp.s
+include/IO.cpp.s:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/IO.cpp.s
+.PHONY : include/IO.cpp.s
+
+include/PPU.o: include/PPU.cpp.o
+
+.PHONY : include/PPU.o
+
+# target to build an object file
+include/PPU.cpp.o:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/PPU.cpp.o
+.PHONY : include/PPU.cpp.o
+
+include/PPU.i: include/PPU.cpp.i
+
+.PHONY : include/PPU.i
+
+# target to preprocess a source file
+include/PPU.cpp.i:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/PPU.cpp.i
+.PHONY : include/PPU.cpp.i
+
+include/PPU.s: include/PPU.cpp.s
+
+.PHONY : include/PPU.s
+
+# target to generate assembly for a file
+include/PPU.cpp.s:
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/PPU.cpp.s
+.PHONY : include/PPU.cpp.s
 
 main.o: main.cpp.o
 
@@ -271,33 +271,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tools.o: tools.cpp.o
-
-.PHONY : tools.o
-
-# target to build an object file
-tools.cpp.o:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/tools.cpp.o
-.PHONY : tools.cpp.o
-
-tools.i: tools.cpp.i
-
-.PHONY : tools.i
-
-# target to preprocess a source file
-tools.cpp.i:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/tools.cpp.i
-.PHONY : tools.cpp.i
-
-tools.s: tools.cpp.s
-
-.PHONY : tools.s
-
-# target to generate assembly for a file
-tools.cpp.s:
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/tools.cpp.s
-.PHONY : tools.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -308,24 +281,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... run"
 	@echo "... VCSEMU"
-	@echo "... APU.o"
-	@echo "... APU.i"
-	@echo "... APU.s"
-	@echo "... CPU.o"
-	@echo "... CPU.i"
-	@echo "... CPU.s"
-	@echo "... IO.o"
-	@echo "... IO.i"
-	@echo "... IO.s"
-	@echo "... PPU.o"
-	@echo "... PPU.i"
-	@echo "... PPU.s"
+	@echo "... include/APU.o"
+	@echo "... include/APU.i"
+	@echo "... include/APU.s"
+	@echo "... include/CPU.o"
+	@echo "... include/CPU.i"
+	@echo "... include/CPU.s"
+	@echo "... include/IO.o"
+	@echo "... include/IO.i"
+	@echo "... include/IO.s"
+	@echo "... include/PPU.o"
+	@echo "... include/PPU.i"
+	@echo "... include/PPU.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tools.o"
-	@echo "... tools.i"
-	@echo "... tools.s"
 .PHONY : help
 
 

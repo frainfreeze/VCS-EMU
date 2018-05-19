@@ -1,10 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/VCSEMU.dir/main.cpp.o"
-  "CMakeFiles/VCSEMU.dir/CPU.cpp.o"
-  "CMakeFiles/VCSEMU.dir/IO.cpp.o"
-  "CMakeFiles/VCSEMU.dir/APU.cpp.o"
-  "CMakeFiles/VCSEMU.dir/PPU.cpp.o"
-  "CMakeFiles/VCSEMU.dir/tools.cpp.o"
+  "CMakeFiles/VCSEMU.dir/include/CPU.cpp.o"
+  "CMakeFiles/VCSEMU.dir/include/IO.cpp.o"
+  "CMakeFiles/VCSEMU.dir/include/APU.cpp.o"
+  "CMakeFiles/VCSEMU.dir/include/PPU.cpp.o"
   "VCSEMU.pdb"
   "VCSEMU"
 )

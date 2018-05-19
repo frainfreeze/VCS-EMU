@@ -81,147 +81,121 @@ CMakeFiles/VCSEMU.dir/main.cpp.o.provides: CMakeFiles/VCSEMU.dir/main.cpp.o.requ
 CMakeFiles/VCSEMU.dir/main.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/main.cpp.o
 
 
-CMakeFiles/VCSEMU.dir/CPU.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
-CMakeFiles/VCSEMU.dir/CPU.cpp.o: ../CPU.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VCSEMU.dir/CPU.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/CPU.cpp.o -c /home/frain/grada-final/src/CPU.cpp
+CMakeFiles/VCSEMU.dir/include/CPU.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
+CMakeFiles/VCSEMU.dir/include/CPU.cpp.o: ../include/CPU.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VCSEMU.dir/include/CPU.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/include/CPU.cpp.o -c /home/frain/grada-final/src/include/CPU.cpp
 
-CMakeFiles/VCSEMU.dir/CPU.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/CPU.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/CPU.cpp > CMakeFiles/VCSEMU.dir/CPU.cpp.i
+CMakeFiles/VCSEMU.dir/include/CPU.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/include/CPU.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/include/CPU.cpp > CMakeFiles/VCSEMU.dir/include/CPU.cpp.i
 
-CMakeFiles/VCSEMU.dir/CPU.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/CPU.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/CPU.cpp -o CMakeFiles/VCSEMU.dir/CPU.cpp.s
+CMakeFiles/VCSEMU.dir/include/CPU.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/include/CPU.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/include/CPU.cpp -o CMakeFiles/VCSEMU.dir/include/CPU.cpp.s
 
-CMakeFiles/VCSEMU.dir/CPU.cpp.o.requires:
+CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.requires:
 
-.PHONY : CMakeFiles/VCSEMU.dir/CPU.cpp.o.requires
+.PHONY : CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.requires
 
-CMakeFiles/VCSEMU.dir/CPU.cpp.o.provides: CMakeFiles/VCSEMU.dir/CPU.cpp.o.requires
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/CPU.cpp.o.provides.build
-.PHONY : CMakeFiles/VCSEMU.dir/CPU.cpp.o.provides
+CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.provides: CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.requires
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.provides.build
+.PHONY : CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.provides
 
-CMakeFiles/VCSEMU.dir/CPU.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/CPU.cpp.o
-
-
-CMakeFiles/VCSEMU.dir/IO.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
-CMakeFiles/VCSEMU.dir/IO.cpp.o: ../IO.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VCSEMU.dir/IO.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/IO.cpp.o -c /home/frain/grada-final/src/IO.cpp
-
-CMakeFiles/VCSEMU.dir/IO.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/IO.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/IO.cpp > CMakeFiles/VCSEMU.dir/IO.cpp.i
-
-CMakeFiles/VCSEMU.dir/IO.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/IO.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/IO.cpp -o CMakeFiles/VCSEMU.dir/IO.cpp.s
-
-CMakeFiles/VCSEMU.dir/IO.cpp.o.requires:
-
-.PHONY : CMakeFiles/VCSEMU.dir/IO.cpp.o.requires
-
-CMakeFiles/VCSEMU.dir/IO.cpp.o.provides: CMakeFiles/VCSEMU.dir/IO.cpp.o.requires
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/IO.cpp.o.provides.build
-.PHONY : CMakeFiles/VCSEMU.dir/IO.cpp.o.provides
-
-CMakeFiles/VCSEMU.dir/IO.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/IO.cpp.o
+CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/include/CPU.cpp.o
 
 
-CMakeFiles/VCSEMU.dir/APU.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
-CMakeFiles/VCSEMU.dir/APU.cpp.o: ../APU.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VCSEMU.dir/APU.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/APU.cpp.o -c /home/frain/grada-final/src/APU.cpp
+CMakeFiles/VCSEMU.dir/include/IO.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
+CMakeFiles/VCSEMU.dir/include/IO.cpp.o: ../include/IO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VCSEMU.dir/include/IO.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/include/IO.cpp.o -c /home/frain/grada-final/src/include/IO.cpp
 
-CMakeFiles/VCSEMU.dir/APU.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/APU.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/APU.cpp > CMakeFiles/VCSEMU.dir/APU.cpp.i
+CMakeFiles/VCSEMU.dir/include/IO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/include/IO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/include/IO.cpp > CMakeFiles/VCSEMU.dir/include/IO.cpp.i
 
-CMakeFiles/VCSEMU.dir/APU.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/APU.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/APU.cpp -o CMakeFiles/VCSEMU.dir/APU.cpp.s
+CMakeFiles/VCSEMU.dir/include/IO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/include/IO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/include/IO.cpp -o CMakeFiles/VCSEMU.dir/include/IO.cpp.s
 
-CMakeFiles/VCSEMU.dir/APU.cpp.o.requires:
+CMakeFiles/VCSEMU.dir/include/IO.cpp.o.requires:
 
-.PHONY : CMakeFiles/VCSEMU.dir/APU.cpp.o.requires
+.PHONY : CMakeFiles/VCSEMU.dir/include/IO.cpp.o.requires
 
-CMakeFiles/VCSEMU.dir/APU.cpp.o.provides: CMakeFiles/VCSEMU.dir/APU.cpp.o.requires
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/APU.cpp.o.provides.build
-.PHONY : CMakeFiles/VCSEMU.dir/APU.cpp.o.provides
+CMakeFiles/VCSEMU.dir/include/IO.cpp.o.provides: CMakeFiles/VCSEMU.dir/include/IO.cpp.o.requires
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/IO.cpp.o.provides.build
+.PHONY : CMakeFiles/VCSEMU.dir/include/IO.cpp.o.provides
 
-CMakeFiles/VCSEMU.dir/APU.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/APU.cpp.o
-
-
-CMakeFiles/VCSEMU.dir/PPU.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
-CMakeFiles/VCSEMU.dir/PPU.cpp.o: ../PPU.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VCSEMU.dir/PPU.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/PPU.cpp.o -c /home/frain/grada-final/src/PPU.cpp
-
-CMakeFiles/VCSEMU.dir/PPU.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/PPU.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/PPU.cpp > CMakeFiles/VCSEMU.dir/PPU.cpp.i
-
-CMakeFiles/VCSEMU.dir/PPU.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/PPU.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/PPU.cpp -o CMakeFiles/VCSEMU.dir/PPU.cpp.s
-
-CMakeFiles/VCSEMU.dir/PPU.cpp.o.requires:
-
-.PHONY : CMakeFiles/VCSEMU.dir/PPU.cpp.o.requires
-
-CMakeFiles/VCSEMU.dir/PPU.cpp.o.provides: CMakeFiles/VCSEMU.dir/PPU.cpp.o.requires
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/PPU.cpp.o.provides.build
-.PHONY : CMakeFiles/VCSEMU.dir/PPU.cpp.o.provides
-
-CMakeFiles/VCSEMU.dir/PPU.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/PPU.cpp.o
+CMakeFiles/VCSEMU.dir/include/IO.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/include/IO.cpp.o
 
 
-CMakeFiles/VCSEMU.dir/tools.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
-CMakeFiles/VCSEMU.dir/tools.cpp.o: ../tools.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VCSEMU.dir/tools.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/tools.cpp.o -c /home/frain/grada-final/src/tools.cpp
+CMakeFiles/VCSEMU.dir/include/APU.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
+CMakeFiles/VCSEMU.dir/include/APU.cpp.o: ../include/APU.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VCSEMU.dir/include/APU.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/include/APU.cpp.o -c /home/frain/grada-final/src/include/APU.cpp
 
-CMakeFiles/VCSEMU.dir/tools.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/tools.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/tools.cpp > CMakeFiles/VCSEMU.dir/tools.cpp.i
+CMakeFiles/VCSEMU.dir/include/APU.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/include/APU.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/include/APU.cpp > CMakeFiles/VCSEMU.dir/include/APU.cpp.i
 
-CMakeFiles/VCSEMU.dir/tools.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/tools.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/tools.cpp -o CMakeFiles/VCSEMU.dir/tools.cpp.s
+CMakeFiles/VCSEMU.dir/include/APU.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/include/APU.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/include/APU.cpp -o CMakeFiles/VCSEMU.dir/include/APU.cpp.s
 
-CMakeFiles/VCSEMU.dir/tools.cpp.o.requires:
+CMakeFiles/VCSEMU.dir/include/APU.cpp.o.requires:
 
-.PHONY : CMakeFiles/VCSEMU.dir/tools.cpp.o.requires
+.PHONY : CMakeFiles/VCSEMU.dir/include/APU.cpp.o.requires
 
-CMakeFiles/VCSEMU.dir/tools.cpp.o.provides: CMakeFiles/VCSEMU.dir/tools.cpp.o.requires
-	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/tools.cpp.o.provides.build
-.PHONY : CMakeFiles/VCSEMU.dir/tools.cpp.o.provides
+CMakeFiles/VCSEMU.dir/include/APU.cpp.o.provides: CMakeFiles/VCSEMU.dir/include/APU.cpp.o.requires
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/APU.cpp.o.provides.build
+.PHONY : CMakeFiles/VCSEMU.dir/include/APU.cpp.o.provides
 
-CMakeFiles/VCSEMU.dir/tools.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/tools.cpp.o
+CMakeFiles/VCSEMU.dir/include/APU.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/include/APU.cpp.o
+
+
+CMakeFiles/VCSEMU.dir/include/PPU.cpp.o: CMakeFiles/VCSEMU.dir/flags.make
+CMakeFiles/VCSEMU.dir/include/PPU.cpp.o: ../include/PPU.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VCSEMU.dir/include/PPU.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VCSEMU.dir/include/PPU.cpp.o -c /home/frain/grada-final/src/include/PPU.cpp
+
+CMakeFiles/VCSEMU.dir/include/PPU.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VCSEMU.dir/include/PPU.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frain/grada-final/src/include/PPU.cpp > CMakeFiles/VCSEMU.dir/include/PPU.cpp.i
+
+CMakeFiles/VCSEMU.dir/include/PPU.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VCSEMU.dir/include/PPU.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frain/grada-final/src/include/PPU.cpp -o CMakeFiles/VCSEMU.dir/include/PPU.cpp.s
+
+CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.requires:
+
+.PHONY : CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.requires
+
+CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.provides: CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.requires
+	$(MAKE) -f CMakeFiles/VCSEMU.dir/build.make CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.provides.build
+.PHONY : CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.provides
+
+CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.provides.build: CMakeFiles/VCSEMU.dir/include/PPU.cpp.o
 
 
 # Object files for target VCSEMU
 VCSEMU_OBJECTS = \
 "CMakeFiles/VCSEMU.dir/main.cpp.o" \
-"CMakeFiles/VCSEMU.dir/CPU.cpp.o" \
-"CMakeFiles/VCSEMU.dir/IO.cpp.o" \
-"CMakeFiles/VCSEMU.dir/APU.cpp.o" \
-"CMakeFiles/VCSEMU.dir/PPU.cpp.o" \
-"CMakeFiles/VCSEMU.dir/tools.cpp.o"
+"CMakeFiles/VCSEMU.dir/include/CPU.cpp.o" \
+"CMakeFiles/VCSEMU.dir/include/IO.cpp.o" \
+"CMakeFiles/VCSEMU.dir/include/APU.cpp.o" \
+"CMakeFiles/VCSEMU.dir/include/PPU.cpp.o"
 
 # External object files for target VCSEMU
 VCSEMU_EXTERNAL_OBJECTS =
 
 VCSEMU: CMakeFiles/VCSEMU.dir/main.cpp.o
-VCSEMU: CMakeFiles/VCSEMU.dir/CPU.cpp.o
-VCSEMU: CMakeFiles/VCSEMU.dir/IO.cpp.o
-VCSEMU: CMakeFiles/VCSEMU.dir/APU.cpp.o
-VCSEMU: CMakeFiles/VCSEMU.dir/PPU.cpp.o
-VCSEMU: CMakeFiles/VCSEMU.dir/tools.cpp.o
+VCSEMU: CMakeFiles/VCSEMU.dir/include/CPU.cpp.o
+VCSEMU: CMakeFiles/VCSEMU.dir/include/IO.cpp.o
+VCSEMU: CMakeFiles/VCSEMU.dir/include/APU.cpp.o
+VCSEMU: CMakeFiles/VCSEMU.dir/include/PPU.cpp.o
 VCSEMU: CMakeFiles/VCSEMU.dir/build.make
 VCSEMU: CMakeFiles/VCSEMU.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable VCSEMU"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable VCSEMU"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VCSEMU.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -230,11 +204,10 @@ CMakeFiles/VCSEMU.dir/build: VCSEMU
 .PHONY : CMakeFiles/VCSEMU.dir/build
 
 CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/main.cpp.o.requires
-CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/CPU.cpp.o.requires
-CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/IO.cpp.o.requires
-CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/APU.cpp.o.requires
-CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/PPU.cpp.o.requires
-CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/tools.cpp.o.requires
+CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/include/CPU.cpp.o.requires
+CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/include/IO.cpp.o.requires
+CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/include/APU.cpp.o.requires
+CMakeFiles/VCSEMU.dir/requires: CMakeFiles/VCSEMU.dir/include/PPU.cpp.o.requires
 
 .PHONY : CMakeFiles/VCSEMU.dir/requires
 

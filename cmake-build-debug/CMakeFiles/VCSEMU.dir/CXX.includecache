@@ -6,44 +6,40 @@
 
 #IncludeRegexTransform: 
 
-/home/frain/grada-final/src/APU.cpp
+/home/frain/grada-final/src/include/APU.cpp
 APU.h
-/home/frain/grada-final/src/APU.h
+/home/frain/grada-final/src/include/APU.h
 
-/home/frain/grada-final/src/APU.h
+/home/frain/grada-final/src/include/APU.h
 
-/home/frain/grada-final/src/CPU.cpp
+/home/frain/grada-final/src/include/CPU.cpp
 CPU.h
-/home/frain/grada-final/src/CPU.h
+/home/frain/grada-final/src/include/CPU.h
 
-/home/frain/grada-final/src/CPU.h
+/home/frain/grada-final/src/include/CPU.h
 iostream
 -
 
-/home/frain/grada-final/src/IO.cpp
+/home/frain/grada-final/src/include/IO.cpp
 IO.h
-/home/frain/grada-final/src/IO.h
+/home/frain/grada-final/src/include/IO.h
 
-/home/frain/grada-final/src/IO.h
+/home/frain/grada-final/src/include/IO.h
 
-/home/frain/grada-final/src/PPU.cpp
+/home/frain/grada-final/src/include/PPU.cpp
 PPU.h
-/home/frain/grada-final/src/PPU.h
+/home/frain/grada-final/src/include/PPU.h
 
-/home/frain/grada-final/src/PPU.h
+/home/frain/grada-final/src/include/PPU.h
 
-/home/frain/grada-final/src/disassembler.h
-stdio.h
--
-string.h
--
-stdlib.h
--
-stdint.h
--
+/home/frain/grada-final/src/include/disassembler.h
 iostream
 -
 string
+-
+sstream
+-
+fstream
 -
 
 /home/frain/grada-final/src/main.cpp
@@ -51,26 +47,14 @@ iostream
 -
 vector
 -
-IO.h
-/home/frain/grada-final/src/IO.h
-APU.h
-/home/frain/grada-final/src/APU.h
-PPU.h
-/home/frain/grada-final/src/PPU.h
-CPU.h
-/home/frain/grada-final/src/CPU.h
-tools.h
-/home/frain/grada-final/src/tools.h
-
-/home/frain/grada-final/src/tools.cpp
-tools.h
-/home/frain/grada-final/src/tools.h
-
-/home/frain/grada-final/src/tools.h
-iostream
--
-string
--
-disassembler.h
-/home/frain/grada-final/src/disassembler.h
+include/IO.h
+/home/frain/grada-final/src/include/IO.h
+include/APU.h
+/home/frain/grada-final/src/include/APU.h
+include/PPU.h
+/home/frain/grada-final/src/include/PPU.h
+include/CPU.h
+/home/frain/grada-final/src/include/CPU.h
+include/disassembler.h
+/home/frain/grada-final/src/include/disassembler.h
 

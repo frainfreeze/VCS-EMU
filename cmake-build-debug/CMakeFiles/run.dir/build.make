@@ -55,7 +55,7 @@ include CMakeFiles/run.dir/progress.make
 
 CMakeFiles/run:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/frain/grada-final/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating disassembler"
-	python3 /home/frain/grada-final/src/genDisassembler.py /home/frain/grada-final/src/ops.csv /home/frain/grada-final/src
+	python3 /home/frain/grada-final/src/genDisassembler.py /home/frain/grada-final/src/ops.csv /home/frain/grada-final/src/include
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make
