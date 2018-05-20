@@ -14,12 +14,9 @@ VCS EMU is Atari 2600 emulator with builtin assembler
                  and disassembler.
 
 
-To use navigate to root dir in your terminal.
+Precompiled binaries are provided in the bin folder.
 
-Build by running
-$ cmake --build cmake-build-debug --target VCSEMU -- -j 4
-
-Usage: cmake-build-debug/VCSEMU <option(s)> FILE
+Usage: VCSEMU <option(s)> FILE
 Options:
         -h, --help                  Show this help message
         -a, --assemble file.asm     Assembles file and outputs file.rom
@@ -27,3 +24,19 @@ Options:
         -r, --run file.rom          Executes rom file
         -x, --run-dump file.rom     Executes rom file and dumps memory to dump.hex
 ```
+
+### Intro
+Bad code, go away.
+
+### Development
+Dependencies
+- Cmake
+- C++ compiler
+- Python 3
+
+To build open terminal in the root directory and execute
+
+`$ cmake --build cmake-build-debug --target VCSEMU -- -j 4`
+
+### License
+Public domain. 
