@@ -33,7 +33,6 @@ Dependencies
 - C++ compiler
 - Python 3
 
-To build open terminal in the root directory and execute
 ```
 $ git clone https://github.com/frainfreeze/VCS-EMU.git
 $ cd VCS-EMU
