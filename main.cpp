@@ -5,6 +5,7 @@
 #include "include/PPU.h"
 #include "include/CPU.h"
 #include "include/disassembler.h"
+#include "include/assembler.h"
 
 static void show_usage(const std::string & name)
 {
@@ -12,14 +13,13 @@ static void show_usage(const std::string & name)
               << "Options:\n"
               << "\t-h, --help                  Show this help message\n"
               << "\t-a, --assemble file.asm     Assembles file and outputs file.rom\n"
-              << "\t-d, --disassemble dump.hex  Disassembles file and outputs file.dis\n"
+              << "\t-d, --disassemble file.rom  Disassembles file and outputs file.dis\n"
               << "\t-r, --run file.rom          Executes rom file\n"
               << "\t-x, --run-dump file.rom     Executes rom file and dumps memory to dump.hex"
               << std::endl;
 }
 
 int main(int argc, char** argv) {
-    // ./vcsemu -switch file
     if (argc < 3) {
         show_usage(argv[0]);
         return 1;
@@ -41,9 +41,6 @@ int main(int argc, char** argv) {
         } else if ((arg == "-r") || (arg == "--run")) {
             option = 3;
             filename = argv[++i];
-        } else if ((arg == "-x") || (arg == "--run-dump")) {
-            option = 4;
-            filename = argv[++i];
         } else {
             show_usage(argv[0]);
             return 1;
@@ -52,8 +49,8 @@ int main(int argc, char** argv) {
 
     switch (option){
     case 1: //assemble
-        std::cout << filename;
-        //tools::assembler(filename);
+        tools::Assembler assembler;
+        assembler.assemble(filename);
         break;
 
     case 2: //disassemble
@@ -76,9 +73,6 @@ int main(int argc, char** argv) {
         // run CPU until the program is killed
         for(;;) CPU();//CPU.op();
 
-    case 4:
-        //run
-        //dump memory into dump.hex
     default:
         break;
     }

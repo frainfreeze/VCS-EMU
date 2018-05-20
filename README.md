@@ -20,9 +20,8 @@ Usage: VCSEMU <option(s)> FILE
 Options:
         -h, --help                  Show this help message
         -a, --assemble file.asm     Assembles file and outputs file.rom
-        -d, --disassemble dump.hex  Disassembles file and outputs file.dis
+        -d, --disassemble file.rom  Disassembles file and outputs file.dis
         -r, --run file.rom          Executes rom file
-        -x, --run-dump file.rom     Executes rom file and dumps memory to dump.hex
 ```
 
 ### Intro

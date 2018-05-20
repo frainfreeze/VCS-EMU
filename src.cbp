@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="src"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/frain/grada-final/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/frain/grada-final/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/frain/grada-final/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run">
+				<Option working_dir="/home/frain/grada-final/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 run"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VCSEMU">
+				<Option output="/home/frain/grada-final/src/VCSEMU" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frain/grada-final/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 VCSEMU"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VCSEMU/fast">
+				<Option output="/home/frain/grada-final/src/VCSEMU" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frain/grada-final/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 VCSEMU/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/frain/grada-final/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/frain/grada-final/src/include/APU.cpp">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/APU.h">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/CPU.cpp">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/CPU.h">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/IO.cpp">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/IO.h">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/PPU.cpp">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/PPU.h">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/include/assembler.h">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/main.cpp">
+			<Option target="VCSEMU"/>
+		</Unit>
+		<Unit filename="/home/frain/grada-final/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
