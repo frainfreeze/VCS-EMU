@@ -1,4 +1,0 @@
-/home/frain/grada-final/src/CMakeFiles/rebuild_cache.dir
-/home/frain/grada-final/src/CMakeFiles/edit_cache.dir
-/home/frain/grada-final/src/CMakeFiles/run.dir
-/home/frain/grada-final/src/CMakeFiles/VCSEMU.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/src.dir/main.cpp.o CMakeFiles/src.dir/CPU.cpp.o CMakeFiles/src.dir/IO.cpp.o CMakeFiles/src.dir/APU.cpp.o CMakeFiles/src.dir/PPU.cpp.o CMakeFiles/src.dir/tools.cpp.o  -o src 

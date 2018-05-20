@@ -1,0 +1,6 @@
+.idea
+cmake-build-debug
+CMakeFiles
+CMakeCache.txt
+VSCEMU
+cmake_install.cmake

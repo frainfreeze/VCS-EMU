@@ -34,8 +34,10 @@ Dependencies
 - Python 3
 
 To build open terminal in the root directory and execute
-
-`$ cmake --build cmake-build-debug --target VCSEMU -- -j 4`
+```
+$ cmake .
+$ make
+```
 
 ### License
 Public domain. 
