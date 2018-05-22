@@ -11,14 +11,18 @@
 namespace tools{
     class Assembler {
     private:
-        static std::string assemble_(const std::basic_stringstream<char, std::char_traits<char>, std::allocator<char>>::__string_type &buffer)
+        static std::string assemble_(const std::basic_stringstream<char, std::char_traits<char>, std::allocator<char>>::__string_type &buffer, bool dump = false)
         {
             std::cout << buffer;
+
             //read until you hit either $ # or newline (that's opcode keyword)
             //   - skip $ # and read number
             //   - get numbers size
-            //   - depending on keyword and number size spit out hex opcode into string stream
-            //return stringstream.str();
+            //   - depending on keyword and number size spit out hex opcode into stringstream
+            //if hexdump switch write stringstream.str() of  hex to file  (add the switch !)
+            //convert hex to binary and return binary string
+
+            return "10101001110000001010101011101000011010011100010000000000"; //hardcoded test2.asm, hex:a9c0aae869c400
         }
 
         std::string strip_white(const std::string& input)
@@ -54,9 +58,26 @@ namespace tools{
             in.close();
 
             //assemble it
-            std::string out = assemble_(cleanSource.str());
+            std::string asm_ = assemble_(cleanSource.str());
+
+            //strip original extension from filename and add new
+            const std::string ext(".asm");
+            const std::string extNew(".rom");
+            std::string fout;
+            if ( filename != ext && filename.size() > ext.size() && filename.substr(filename.size() - ext.size()) == ".asm" ){
+                fout = filename.substr(0, filename.size() - ext.size());
+            }
+            fout+=extNew;
 
             //write the out to file.rom
+            std::ofstream out(fout);
+
+            if (!out) {
+                std::cerr << fout << " could not be opened for writing!" << std::endl;
+                return 1;
+            }
+            out << asm_;
+            out.close();
 
             return 0;
         }

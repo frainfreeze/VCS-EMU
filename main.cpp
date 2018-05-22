@@ -2,20 +2,22 @@
 #include <vector>
 #include "include/IO.h"
 #include "include/APU.h"
-#include "include/PPU.h"
 #include "include/CPU.h"
 #include "include/disassembler.h"
 #include "include/assembler.h"
+
+/*todo: add new switches*/
 
 static void show_usage(const std::string & name)
 {
     std::cerr << "Usage: " << name << " <option(s)> FILE\n"
               << "Options:\n"
-              << "\t-h, --help                  Show this help message\n"
-              << "\t-a, --assemble file.asm     Assembles file and outputs file.rom\n"
-              << "\t-d, --disassemble file.rom  Disassembles file and outputs file.dis\n"
-              << "\t-r, --run file.rom          Executes rom file\n"
-              << "\t-x, --run-dump file.rom     Executes rom file and dumps memory to dump.hex"
+              << "\t-h, --help                   Show this help message\n"
+              << "\t-a, --assemble file.asm      Assembles file and outputs file.rom\n"
+              << "\t-b, --assemble-dump file.asm Assembles file and dumps hex to dump.hex\n"
+              << "\t-d, --disassemble file.rom   Disassembles file and outputs file.dis\n"
+              << "\t-r, --run file.rom           Executes rom file\n"
+              << "\t-x, --run-dump file.rom      Executes rom file and dumps memory to dump.hex"
               << std::endl;
 }
 

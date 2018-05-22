@@ -3,7 +3,7 @@ project(src)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(VCSEMU main.cpp include/CPU.cpp include/CPU.h include/IO.cpp include/IO.h include/APU.cpp include/APU.h include/PPU.cpp include/PPU.h include/assembler.h)
+add_executable(VCSEMU main.cpp include/CPU.cpp include/CPU.h include/IO.cpp include/IO.h include/APU.cpp include/APU.h include/assembler.h include/TIA.cpp include/TIA.h)
 
 add_custom_target(
         run ALL
