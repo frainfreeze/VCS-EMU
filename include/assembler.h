@@ -19,10 +19,9 @@ namespace tools{
             //   - skip $ # and read number
             //   - get numbers size
             //   - depending on keyword and number size spit out hex opcode into stringstream
-            //if hexdump switch write stringstream.str() of  hex to file  (add the switch !)
-            //convert hex to binary and return binary string
+            //return stringstream.str
 
-            return "10101001110000001010101011101000011010011100010000000000"; //hardcoded test2.asm, hex:a9c0aae869c400
+            return "a9c0aae869c400"; //hardcoded test2.asm
         }
 
         std::string strip_white(const std::string& input)
