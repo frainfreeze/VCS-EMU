@@ -16,15 +16,17 @@ VCS EMU is Atari 2600 emulator with builtin assembler
 
 Precompiled binaries are provided in the bin folder.
 
-Usage: VCSEMU <option(s)> FILE
+Usage: ./VCSEMU <option(s)> FILE
 Options:
-        -h, --help                  Show this help message
-        -a, --assemble file.asm     Assembles file and outputs file.rom
-        -d, --disassemble file.rom  Disassembles file and outputs file.dis
-        -r, --run file.rom          Executes rom file
+        -h, --help                   Show this help message
+        -a, --assemble file.asm      Assembles file and outputs file.rom
+        -d, --disassemble file.rom   Disassembles file and outputs to console
+        -r, --run file.rom           Executes rom file
+        -x, --run-dump file.rom      Executes rom file and dumps memory to dump.rom
 ```
 
 ### Intro
+![](https://i.imgur.com/Bn5Mxop.png)
 Bad code, go away.
 
 ### Development
