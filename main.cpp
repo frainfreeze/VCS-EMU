@@ -12,7 +12,18 @@
 
 static void show_usage(const std::string & name)
 {
-    std::cerr << "Usage: " << name << " <option(s)> FILE\n"
+    std::cout <<   "+----------------------------------------------------+"  << std::endl;
+    std::cout <<   "+     _   _  _____  _____   _____ ___  ___ _   _     +"  << std::endl;
+    std::cout << R"(+    | | | |/  __ \/  ___| |  ___||  \/  || | | |    +)" << std::endl;
+    std::cout << R"(+    | | | || /  \/\ `--.  | |__  | .  . || | | |    +)" << std::endl;
+    std::cout << R"(+    | | | || |     `--. \ |  __| | |\/| || | | |    +)" << std::endl;
+    std::cout << R"(+    \ \_/ /| \__/\/\__/ / | |___ | |  | || |_| |    +)" << std::endl;
+    std::cout << R"(+     \___/  \____/\____/  \____/ \_|  |_/ \___/     +)" << std::endl;
+    std::cout <<   "+____________________________________________________+"  << std::endl;
+    std::cout <<   "+        Tomislav (frainfreeze) Kucar, 2018          +"  << std::endl;
+    std::cout <<   "+----------------------------------------------------+"  << std::endl;
+    std::cout <<   "\nVCS EMU is Atari 2600 emulator with builtin assembler \n                 and disassembler.\n\n" << std::endl;
+    std::cout << "Usage: " << name << " <option(s)> FILE\n"
               << "Options:\n"
               << "\t-h, --help                   Show this help message\n"
               << "\t-a, --assemble file.asm      Assembles file and outputs file.rom\n"
@@ -81,17 +92,6 @@ int main(int argc, char** argv) {
         break;
 
     case 3: case 4: //run
-        std::cout <<   "+----------------------------------------------------+"  << std::endl;
-        std::cout <<   "+     _   _  _____  _____   _____ ___  ___ _   _     +"  << std::endl;
-        std::cout << R"(+    | | | |/  __ \/  ___| |  ___||  \/  || | | |    +)" << std::endl;
-        std::cout << R"(+    | | | || /  \/\ `--.  | |__  | .  . || | | |    +)" << std::endl;
-        std::cout << R"(+    | | | || |     `--. \ |  __| | |\/| || | | |    +)" << std::endl;
-        std::cout << R"(+    \ \_/ /| \__/\/\__/ / | |___ | |  | || |_| |    +)" << std::endl;
-        std::cout << R"(+     \___/  \____/\____/  \____/ \_|  |_/ \___/     +)" << std::endl;
-        std::cout <<   "+____________________________________________________+"  << std::endl;
-        std::cout <<   "+        Tomislav (frainfreeze) Kucar, 2018          +"  << std::endl;
-        std::cout <<   "+----------------------------------------------------+"  << std::endl;
-
         for(unsigned int i = 0; i < 65536; i++){
             /* todo: load program into the memory from the file */
 
@@ -141,7 +141,11 @@ int main(int argc, char** argv) {
 
             out << ss.str() << std::endl;
             out.close();
+            std::cout << "Executed rom and dumped memory successfully." << std::endl;
+            break;
         }
+
+        std::cout << "Executed rom successfully." << std::endl;
         break;
 
     default:

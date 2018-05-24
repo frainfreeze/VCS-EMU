@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.7)
 project(src)
 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(VCSEMU main.cpp include/mos6502.cpp include/mos6502.h include/IO.cpp include/IO.h include/APU.cpp include/APU.h include/assembler.h include/TIA.cpp include/TIA.h)
