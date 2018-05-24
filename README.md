@@ -1,33 +1,6 @@
-```
-+----------------------------------------------------+
-+     _   _  _____  _____   _____ ___  ___ _   _     +
-+    | | | |/  __ \/  ___| |  ___||  \/  || | | |    +
-+    | | | || /  \/\ `--.  | |__  | .  . || | | |    +
-+    | | | || |     `--. \ |  __| | |\/| || | | |    +
-+    \ \_/ /| \__/\/\__/ / | |___ | |  | || |_| |    +
-+     \___/  \____/\____/  \____/ \_|  |_/ \___/     +
-+____________________________________________________+
-+        Tomislav (frainfreeze) Kucar, 2018          +
-+----------------------------------------------------+
-
-VCS EMU is Atari 2600 emulator with builtin assembler 
-                 and disassembler.
-
-
-Precompiled binaries are provided in the bin folder.
-
-Usage: ./VCSEMU <option(s)> FILE
-Options:
-        -h, --help                   Show this help message
-        -a, --assemble file.asm      Assembles file and outputs file.rom
-        -d, --disassemble file.rom   Disassembles file and outputs to console
-        -r, --run file.rom           Executes rom file
-        -x, --run-dump file.rom      Executes rom file and dumps memory to dump.rom
-```
-
-### Intro
-![](https://i.imgur.com/Bn5Mxop.png)
-Bad code, go away.
+<p align="center">
+  <img width="460" height="300" src="http://i.imgur.com/OLly94X.png">
+</p>
 
 ### Development
 Dependencies
