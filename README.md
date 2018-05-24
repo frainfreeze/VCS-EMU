@@ -41,13 +41,10 @@ Memory location $752e (29998) contains the ascii code of the last key pressed.
 
 Memory locations $752F (29999) to $81fe (33278) are reserved for audio.
 
-Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels (last 30720 bits in memory). Different values will
-draw different colour pixels. The colours are:
-
-$0: Black     $5: Green     $a: Light red     
-$1: White     $6: Blue      $b: Dark grey   
-$2: Red       $7: Yellow    $c: Grey  
-$3: Cyan      $8: Orange    $d: Light green   
-$4: Purple    $9: Brown     $e: Light blue 
-$f: Light grey
+Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels. 
+Different values will draw different colour pixels. The colours are:
+```
+![](http://i.imgur.com/LGLzA81.png)
+```
+where 0 is black, 5 is blue... etc 
 ```

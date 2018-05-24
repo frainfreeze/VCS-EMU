@@ -42,6 +42,12 @@ uint8_t MemRead(uint16_t addr) {
     return memory[addr];
 }
 
+//misc
+int hex2dec(const std::string s)
+{
+    return std::stoul(s, nullptr, 16);
+}
+
 
 int main(int argc, char **argv) {
     if (argc < 3) {
@@ -77,6 +83,21 @@ int main(int argc, char **argv) {
     std::stringstream ss;
     mos6502 cpu(MemRead, MemWrite);
 
+    //load rom into string
+    std::string buffer;
+    std::ifstream in(filename);
+    if (!in) {
+        std::cerr << filename << " could not be opened for reading!" << std::endl;
+        return 1;
+    }
+    while (in){ // While there's still stuff left to read
+        in >> buffer;
+    }
+    in.close();
+
+    int romLength = static_cast<int>(buffer.length());
+    int bufferCounter = 0;
+
     switch (option) {
         case 1: //assemble
             tools::Assembler assembler;
@@ -91,48 +112,15 @@ int main(int argc, char **argv) {
         case 3:
         case 4: //run
             for (unsigned int i = 0; i < 65536; i++) {
-                /* todo: load program into the memory from the file */
-
-                switch (i) { //hardcoded program into the memory
-                    case 0:
-                        memory[i] = 0xa9;
-                        break;
-                    case 1:
-                        memory[i] = 0x01;
-                        break;
-                    case 2:
-                        memory[i] = 0x85;
-                        break;
-                    case 3:
-                        memory[i] = 0x01;
-                        break;
-                    case 4:
-                        memory[i] = 0xa9;
-                        break;
-                    case 5:
-                        memory[i] = 0x05;
-                        break;
-                    case 6:
-                        memory[i] = 0x8d;
-                        break;
-                    case 7:
-                        memory[i] = 0x01;
-                        break;
-                    case 8:
-                        memory[i] = 0x02;
-                        break;
-                    case 9:
-                        memory[i] = 0x00;
-                        break;
-                    default:
-                        if(i<33279) memory[i] = 0x00; // fill with NOPs
-                        else memory[i] = 0x0c;
-                        break;
+                std::stringstream ss;
+                if(bufferCounter<romLength){
+                    ss << buffer[bufferCounter++];
+                    ss << buffer[bufferCounter++];
+                    memory[i] = hex2dec(ss.str());
+                } else {
+                    memory[i] = 0x00; // fill with NOPs
                 }
             }
-            //..mark begging and end of video memory
-            memory[33279] = 0xa9;
-            memory[63999] = 0xa9;
 
             cpu.Reset();
             cpu.Run(10000000);

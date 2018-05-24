@@ -745,7 +745,6 @@ void mos6502::Run(uint32_t n) {
         tia.draw();
         tia.mainWindow.display();
 
-        std::cout << Read(29997);
         //sound
         //apu.play();
 
