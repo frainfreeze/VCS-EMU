@@ -7,8 +7,10 @@ Dependencies
 - Cmake
 - C++ compiler
 - Python 3
+- SFML
 
 ```
+$ sudo apt-get install libsfml-dev
 $ git clone https://github.com/frainfreeze/VCS-EMU.git
 $ cd VCS-EMU
 $ cmake .
