@@ -33,3 +33,21 @@ Public domain.
 - [Atari 2600 Programming for Newbies](http://www.randomterrain.com/atari-2600-memories-tutorial-andrew-davie-01.html)
 - [Addressing Modes](https://web.archive.org/web/20080307103453/http://www.obelisk.demon.co.uk:80/6502/addressing.html)
 - [Instruction Reference](https://web.archive.org/web/20080305225025/http://www.obelisk.demon.co.uk:80/6502/reference.html)
+
+### Notes
+```
+Memory location $752d (29997) contains a new random byte on every instruction.
+Memory location $752e (29998) contains the ascii code of the last key pressed.
+
+Memory locations $752F (29999) to $81fe (33278) are reserved for audio.
+
+Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels (last 30720 bits in memory). Different values will
+draw different colour pixels. The colours are:
+
+$0: Black     $5: Green     $a: Light red     
+$1: White     $6: Blue      $b: Dark grey   
+$2: Red       $7: Yellow    $c: Grey  
+$3: Cyan      $8: Orange    $d: Light green   
+$4: Purple    $9: Brown     $e: Light blue 
+$f: Light grey
+```

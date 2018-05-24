@@ -18,4 +18,11 @@ add_custom_target(
 
 add_dependencies(VCSEMU run)
 
+#look for SFML and add it
+set (CMAKE_MODULE_PATH "/usr/share/SFML/cmake/Modules")
+find_package (SFML REQUIRED system window graphics network audio)
+
+include_directories(${SFML_INCLUDE_DIR})
+
+target_link_libraries(VCSEMU ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
 #todo: run tests after compile

@@ -1,5 +1,6 @@
-
 #include "mos6502.h"
+#include <ctime>
+#include <iostream>
 
 mos6502::mos6502(BusRead r, BusWrite w) {
     Write = (BusWrite) w;
@@ -702,11 +703,28 @@ void mos6502::NMI() {
 }
 
 void mos6502::Run(uint32_t n) {
+    srand(static_cast<unsigned int>(time(nullptr)));
+
     uint32_t c = 0;
     uint8_t opcode = 0;
     Instr instr;
 
-    for (;;) {
+    TIA tia;
+    //APU apu;
+    //IO io;
+
+    while (tia.mainWindow.isOpen()) {
+        sf::Event event;
+        while (tia.mainWindow.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                tia.mainWindow.close();
+            }
+        }
+
+        // write random byte to 29997
+        auto m = static_cast<uint8_t>(rand() % 256);
+        Write(29997, m);
+
         // fetch
         opcode = Read(pc++);
 
@@ -722,6 +740,17 @@ void mos6502::Run(uint32_t n) {
             if (c++ == n) return;
         }
 
+        //display
+        tia.mainWindow.clear();
+        tia.draw();
+        tia.mainWindow.display();
+
+        std::cout << Read(29997);
+        //sound
+        //apu.play();
+
+        //input
+        //io.get();
     }
 }
 

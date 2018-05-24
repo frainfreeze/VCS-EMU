@@ -9,6 +9,10 @@
 #include <iostream>
 #include <cstdint>
 
+#include <SFML/Graphics.hpp>
+
+#include "TIA.h"
+
 using namespace std;
 
 #define NEGATIVE  0x80
@@ -43,6 +47,8 @@ using namespace std;
 class mos6502
 {
 private:
+
+
 	// registers
 	uint8_t A; // accumulator
 	uint8_t X; // X-index
