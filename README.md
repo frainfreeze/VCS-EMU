@@ -2,11 +2,6 @@
   <img width="460" height="300" src="http://i.imgur.com/OLly94X.png">
 </p>
 
-![demo](https://i.imgur.com/ARBJu1x.gif)
-
-![demo2](https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif)
-
-### Development
 Developed and tested on Debian 9. Requirements:
 - Cmake
 - C++ compiler
@@ -20,6 +15,10 @@ $ cd VCS-EMU
 $ cmake .
 $ make
 ```
+
+![demo](https://i.imgur.com/ARBJu1x.gif)
+
+![demo2](https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif)
 
 ### Notes
 ```
