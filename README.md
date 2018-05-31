@@ -3,7 +3,7 @@
 </p>
 
 ### Development
-Dependencies
+Developed and tested on Debian 9. Requirements:
 - Cmake
 - C++ compiler
 - Python 3
@@ -15,6 +15,21 @@ $ git clone https://github.com/frainfreeze/VCS-EMU.git
 $ cd VCS-EMU
 $ cmake .
 $ make
+```
+
+### Notes
+```
+Memory location $752d (29997) contains a new random byte on every instruction.
+Memory location $752e (29998) contains the ascii code of the last key pressed.
+
+Memory locations $752F (29999) to $81fe (33278) are reserved for audio.
+
+Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels. 
+Different values will draw different colour pixels. The colours are:
+```
+![](http://i.imgur.com/LGLzA81.png)
+```
+where 0 is black, 5 is blue... etc 
 ```
 
 ### License
@@ -33,18 +48,3 @@ Public domain.
 - [Atari 2600 Programming for Newbies](http://www.randomterrain.com/atari-2600-memories-tutorial-andrew-davie-01.html)
 - [Addressing Modes](https://web.archive.org/web/20080307103453/http://www.obelisk.demon.co.uk:80/6502/addressing.html)
 - [Instruction Reference](https://web.archive.org/web/20080305225025/http://www.obelisk.demon.co.uk:80/6502/reference.html)
-
-### Notes
-```
-Memory location $752d (29997) contains a new random byte on every instruction.
-Memory location $752e (29998) contains the ascii code of the last key pressed.
-
-Memory locations $752F (29999) to $81fe (33278) are reserved for audio.
-
-Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels. 
-Different values will draw different colour pixels. The colours are:
-```
-![](http://i.imgur.com/LGLzA81.png)
-```
-where 0 is black, 5 is blue... etc 
-```
