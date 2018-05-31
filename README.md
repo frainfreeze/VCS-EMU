@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="http://i.imgur.com/OLly94X.png">
+  <img src="http://i.imgur.com/OLly94X.png">
 </p>
 
 Developed and tested on Debian 9. Requirements:
