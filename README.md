@@ -1,10 +1,7 @@
 <p align="center">
   <img width="460" height="300" src="http://i.imgur.com/OLly94X.png">
 </p>
-
-<p align="center">
-  <img width="460" height="300" src="https://i.imgur.com/ClgSNE3.gif">
-</p>
+![](https://i.imgur.com/ARBJu1x.gif)
 
 ### Development
 Developed and tested on Debian 9. Requirements:
