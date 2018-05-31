@@ -4,7 +4,7 @@
 
 ![demo](https://i.imgur.com/ARBJu1x.gif)
 
-![demo2](https://i.imgur.com/sM4gQKS.gif)
+![demo2](https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif)
 
 ### Development
 Developed and tested on Debian 9. Requirements:
