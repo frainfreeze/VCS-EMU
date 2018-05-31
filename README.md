@@ -18,7 +18,6 @@ $ make
 
 ![demo](https://i.imgur.com/ARBJu1x.gif)
 
-![demo2](https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif)
 
 ### Notes
 ```
@@ -34,6 +33,8 @@ Different values will draw different colour pixels. The colours are:
 ```
 where 0 is black, 5 is blue... etc 
 ```
+
+![demo2](https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif)
 
 ### License
 Public domain. 
