@@ -1,6 +1,6 @@
 from PIL import Image
 
-im= Image.open("colors.png")
+im= Image.open("ntsc.png")
 pix = im.load()
 colorFile = open("colorsT.txt",'w')
 counter = 0

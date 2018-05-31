@@ -11,7 +11,7 @@ add_executable(VCSEMU main.cpp include/mos6502.cpp include/mos6502.h include/IO.
 
 add_custom_target(
         run ALL
-        COMMAND python3 ${CMAKE_CURRENT_SOURCE_DIR}/genDisassembler.py ${CMAKE_CURRENT_SOURCE_DIR}/ops.csv ${CMAKE_CURRENT_SOURCE_DIR}/include
+        COMMAND python3 ${CMAKE_CURRENT_SOURCE_DIR}/bin/genDisassembler.py ${CMAKE_CURRENT_SOURCE_DIR}/bin/ops.csv ${CMAKE_CURRENT_SOURCE_DIR}/include
         BYPRODUCTS include/disassembler.h
         COMMENT "Generating disassembler"
 )
