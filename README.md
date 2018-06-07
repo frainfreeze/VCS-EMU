@@ -30,9 +30,7 @@ Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels.
 Different values will draw different colour pixels. The colours are:
 ```
 ![](http://i.imgur.com/LGLzA81.png)
-```
-where 0 is black, 5 is blue... etc 
-```
+
 
 ![demo2](https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif)
 
