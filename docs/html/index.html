@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Introduction &#8212; Atari 2600 emulator 0.1 documentation</title>
+    <title>Notes &#8212; Atari 2600 emulator 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -41,66 +41,74 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <dl class="docutils">
-<dt>&lt;p align=&#8221;center&#8221;&gt;</dt>
-<dd>&lt;img src=&#8221;<a class="reference external" href="http://i.imgur.com/OLly94X.png">http://i.imgur.com/OLly94X.png</a>&#8220;&gt;</dd>
-</dl>
-<p>&lt;/p&gt;</p>
-<p>Developed and tested on Debian 9. Requirements:
-- Cmake
-- C++ compiler
-- Python 3
-- SFML</p>
-<p><code class="docutils literal"><span class="pre">`</span>
-<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">libsfml-dev</span>
-<span class="pre">$</span> <span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/frainfreeze/VCS-EMU.git</span>
-<span class="pre">$</span> <span class="pre">cd</span> <span class="pre">VCS-EMU</span>
-<span class="pre">$</span> <span class="pre">cmake</span> <span class="pre">.</span>
-<span class="pre">$</span> <span class="pre">make</span>
-<span class="pre">`</span></code></p>
-<p>![demo](<a class="reference external" href="https://i.imgur.com/ARBJu1x.gif">https://i.imgur.com/ARBJu1x.gif</a>)</p>
-<p>### Notes
-<a href="#id1"><span class="problematic" id="id2">``</span></a>`
-Memory location $752d (29997) contains a new random byte on every instruction.
-Memory location $752e (29998) contains the ascii code of the last key pressed.</p>
-<p>Memory locations $752F (29999) to $81fe (33278) are reserved for audio.</p>
-<p>Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels.
+  <p><img alt="img" src="http://i.imgur.com/OLly94X.png" /></p>
+<p>Developed and tested on Debian 9. Requirements:</p>
+<ul class="simple">
+<li>Cmake</li>
+<li>C++ compiler</li>
+<li>Python 3</li>
+<li>SFML</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt-get install libsfml-dev
+$ git clone https://github.com/frainfreeze/VCS-EMU.git
+$ cd VCS-EMU
+$ cmake .
+$ make
+</pre></div>
+</div>
+<p><img alt="demo" src="https://i.imgur.com/ARBJu1x.gif" /></p>
+<div class="section" id="notes">
+<h1>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Memory location $752d (29997) contains a new random byte on every instruction.
+Memory location $752e (29998) contains the ascii code of the last key pressed.
+
+Memory locations $752F (29999) to $81fe (33278) are reserved for audio.
+
+Memory locations $81ff (33279) to $f9ff (63999) map to the screen pixels.
 Different values will draw different colour pixels. The colours are:
-<a href="#id3"><span class="problematic" id="id4">``</span></a>`
-![](<a class="reference external" href="http://i.imgur.com/LGLzA81.png">http://i.imgur.com/LGLzA81.png</a>)</p>
-<p>![demo2](<a class="reference external" href="https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif">https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif</a>)</p>
-<p>### License
-Public domain.</p>
-<p>### Links
-- [Preliminary data sheet, MOS TECH 1976 (pdf scan)](<a class="reference external" href="https://www.mdawson.net/vic20chrome/cpu/mos_6500_mpu_preliminary_may_1976.pdf">https://www.mdawson.net/vic20chrome/cpu/mos_6500_mpu_preliminary_may_1976.pdf</a>)
-- [The Instruction Set](<a class="reference external" href="https://web.archive.org/web/20080218073724/http://www.obelisk.demon.co.uk/6502/instructions.html">https://web.archive.org/web/20080218073724/http://www.obelisk.demon.co.uk/6502/instructions.html</a>)
-- [6502 Instruction Set](<a class="reference external" href="https://www.atariarchives.org/2bml/chapter_10.php">https://www.atariarchives.org/2bml/chapter_10.php</a>)
-- [The 6502/65C02/65C816 Instruction Set Decoded](<a class="reference external" href="http://www.llx.com/~nparker/a2/opcodes.html">http://www.llx.com/~nparker/a2/opcodes.html</a>)
-- [6502 Instruction Set](<a class="reference external" href="http://www.masswerk.at/6502/6502_instruction_set.html">http://www.masswerk.at/6502/6502_instruction_set.html</a>)
-- [The Registers](<a class="reference external" href="https://web.archive.org/web/20080218084556/http://www.obelisk.demon.co.uk:80/6502/registers.html#N">https://web.archive.org/web/20080218084556/http://www.obelisk.demon.co.uk:80/6502/registers.html#N</a>)
-- [Atari 2600 Specifications](<a class="reference external" href="http://problemkaputt.de/2k6specs.htm">http://problemkaputt.de/2k6specs.htm</a>)
-- [Visualizing a classic cpu in action: the 6502 (pdf)](<a class="reference external" href="http://www.visual6502.org/docs/6502_in_action_14_web.pdf">http://www.visual6502.org/docs/6502_in_action_14_web.pdf</a>)
-- [6502 vs. 6507](<a class="reference external" href="http://blog.visual6502.org/2010/09/6502-vs-6507.html">http://blog.visual6502.org/2010/09/6502-vs-6507.html</a>)
-- [Atari 2600 Programming for Newbies](<a class="reference external" href="http://www.randomterrain.com/atari-2600-memories-tutorial-andrew-davie-01.html">http://www.randomterrain.com/atari-2600-memories-tutorial-andrew-davie-01.html</a>)
-- [Addressing Modes](<a class="reference external" href="https://web.archive.org/web/20080307103453/http://www.obelisk.demon.co.uk:80/6502/addressing.html">https://web.archive.org/web/20080307103453/http://www.obelisk.demon.co.uk:80/6502/addressing.html</a>)
-- [Instruction Reference](<a class="reference external" href="https://web.archive.org/web/20080305225025/http://www.obelisk.demon.co.uk:80/6502/reference.html">https://web.archive.org/web/20080305225025/http://www.obelisk.demon.co.uk:80/6502/reference.html</a>)</p>
+</pre></div>
+</div>
+<p><img alt="image2" src="http://i.imgur.com/LGLzA81.png" /></p>
+<p><img alt="demo2" src="https://thumbs.gfycat.com/EnviousPeriodicDorado-max-1mb.gif" /></p>
+</div>
+<div class="section" id="license">
+<h1>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h1>
+<p>Public domain.</p>
+</div>
+<div class="section" id="links">
+<h1>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="https://www.mdawson.net/vic20chrome/cpu/mos_6500_mpu_preliminary_may_1976.pdf">Preliminary data sheet, MOS TECH 1976 (pdf scan)</a></li>
+<li><a class="reference external" href="https://web.archive.org/web/20080218073724/http://www.obelisk.demon.co.uk/6502/instructions.html">The Instruction Set</a></li>
+<li><a class="reference external" href="https://www.atariarchives.org/2bml/chapter_10.php">6502 Instruction Set</a></li>
+<li><a class="reference external" href="http://www.llx.com/~nparker/a2/opcodes.html">The 6502/65C02/65C816 Instruction Set Decoded</a></li>
+<li><a class="reference external" href="http://www.masswerk.at/6502/6502_instruction_set.html">6502 Instruction
+Set</a></li>
+<li><a class="reference external" href="https://web.archive.org/web/20080218084556/http://www.obelisk.demon.co.uk:80/6502/registers.html#N">The Registers</a></li>
+<li><a class="reference external" href="http://problemkaputt.de/2k6specs.htm">Atari 2600 Specifications</a></li>
+<li><a class="reference external" href="http://www.visual6502.org/docs/6502_in_action_14_web.pdf">Visualizing a classic cpu in action: the 6502 (pdf)</a></li>
+<li><a class="reference external" href="http://blog.visual6502.org/2010/09/6502-vs-6507.html">6502 vs. 6507</a></li>
+<li><a class="reference external" href="http://www.randomterrain.com/atari-2600-memories-tutorial-andrew-davie-01.html">Atari 2600 Programming for Newbies</a></li>
+<li><a class="reference external" href="https://web.archive.org/web/20080307103453/http://www.obelisk.demon.co.uk:80/6502/addressing.html">Addressing Modes</a></li>
+<li><a class="reference external" href="https://web.archive.org/web/20080305225025/http://www.obelisk.demon.co.uk:80/6502/reference.html">Instruction Reference</a></li>
+</ul>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>lalla</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="development-environment">
-<h1>Development environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h1>
+<h2>Development environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h2>
 <p>asdfasf
 |</p>
 </div>
 <div class="section" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>Books:</p>
 <ol class="arabic simple">
 <li>a</li>
@@ -110,6 +118,7 @@ Public domain.</p>
 <li>b</li>
 </ol>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -124,9 +133,14 @@ Public domain.</p>
             </a></p>
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Introduction</a></li>
+<li><a class="reference internal" href="#">Notes</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#links">Links</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#development-environment">Development environment</a></li>
 <li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
 </ul>
 <div class="relations">
 <h3>Related Topics</h3>

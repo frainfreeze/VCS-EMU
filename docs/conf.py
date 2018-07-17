@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+source_suffix = ['.rst', '.md']
+
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
 ]
 
 templates_path = ['_templates']
-source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
-}
-source_suffix = ['.rst', '.md']
+
 master_doc = 'index'
 
 # General information about the project.

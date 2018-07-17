@@ -1,4 +1,4 @@
-.. include:: ../README.md
+.. include:: ../readme.rst
 .. include:: tut.rst
 
 
